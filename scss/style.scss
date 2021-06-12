@@ -1,5 +1,4 @@
-// this import doesn't work for some reason
-@import "fonts";
+@import url(fonts.scss);
 
 $text-color_primery: #ffffff;
 $text-color_secondary: #e8e8e8;
@@ -52,14 +51,14 @@ h6 {
 
 // HEADER
 .header {
+  background-image: url("../img/nature-mountains.png");
   @include background-img();
   padding-top: 260px;
   padding-bottom: 136px;
   color: $text-color_primery;
   font-family: "Aleo";
-  
+
   &__title {
-    background-image: url("../img/nature-mountains.png");
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -186,3 +185,48 @@ h6 {
     @include btn();
   }
 }
+
+.info-card-imgs{
+
+}
+
+.img-mid-left{
+  width: 66%;
+  height: 220px;
+  background-image: url("../img/nature-river.png");
+  @include background-img();
+  margin-top: 118px;
+  margin-bottom: 5px;
+  margin-left: 12%;
+}
+
+.img-right{
+  background-image: url("../img/nature-mountains.png");
+  @include background-img(); 
+  width: 66%;
+  height: 220px;
+  margin-left: 35%;
+}
+
+// COUNTRY SECTION
+.country{
+  background-image: url("../img/apartaments.png");
+  @include background-img(); 
+  color: $text-color_primery;
+}
+
+.country-card__country{
+  text-transform: capitalize;
+}
+
+.country-card__title{
+  text-transform: uppercase;
+}
+
+.country-card__button{
+  @include btn();
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+

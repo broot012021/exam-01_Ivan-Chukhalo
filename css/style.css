@@ -1,45 +1,4 @@
-@font-face {
-  font-family: "Aleo";
-  src: url("../font/aleo/Light/aleo-light-webfont.eot"), url("../font/aleo/Light/aleo-light-webfont.svg"), url("../font/aleo/Light/aleo-light-webfont.ttf"), url("../font/aleo/Light/aleo-light-webfont.woff"), url("../font/aleo/Light/aleo-light-webfont.woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Aleo";
-  src: url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.eot"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.svg"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.ttf"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.woff"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.woff2");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Aleo";
-  src: url("../font/aleo/Regular/aleo-regular-webfont.eot"), url("../font/aleo/Regular/aleo-regular-webfont.svg"), url("../font/aleo/Regular/aleo-regular-webfont.ttf"), url("../font/aleo/Regular/aleo-regular-webfont.woff"), url("../font/aleo/Regular/aleo-regular-webfont.woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Aleo";
-  src: url("../font/aleo/Regular-Italic/aleo-italic-webfont.eot"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.svg"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.ttf"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.woff"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.woff2");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Aleo";
-  src: url("../font/aleo/Bold/aleo-bold-webfont.eot"), url("../font/aleo/Bold/aleo-bold-webfont.svg"), url("../font/aleo/Bold/aleo-bold-webfont.ttf"), url("../font/aleo/Bold/aleo-bold-webfont.woff"), url("../font/aleo/Bold/aleo-bold-webfont.woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Aleo";
-  src: url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.eot"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.svg"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.ttf"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.woff"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.woff2");
-  font-weight: 700;
-  font-style: italic;
-}
-
+@import url(fonts.scss);
 p {
   margin-bottom: 0;
 }
@@ -54,6 +13,7 @@ h6 {
 }
 
 .header {
+  background-image: url("../img/nature-mountains.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,7 +24,6 @@ h6 {
 }
 
 .header__title {
-  background-image: url("../img/nature-mountains.png");
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 5px;
@@ -196,5 +155,56 @@ h6 {
   box-sizing: border-box;
   height: 60px;
   background: linear-gradient(45deg, #496bfe 0%, #496bfe 45%, #5474fd 45%, #5474fd 100%);
+}
+
+.img-mid-left {
+  width: 66%;
+  height: 220px;
+  background-image: url("../img/nature-river.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 118px;
+  margin-bottom: 5px;
+  margin-left: 12%;
+}
+
+.img-right {
+  background-image: url("../img/nature-mountains.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 66%;
+  height: 220px;
+  margin-left: 35%;
+}
+
+.country {
+  background-image: url("../img/apartaments.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.country-card__country {
+  text-transform: capitalize;
+}
+
+.country-card__title {
+  text-transform: uppercase;
+}
+
+.country-card__button {
+  border: none;
+  color: #ffffff;
+  background-color: #5474fd;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  height: 60px;
+  background: linear-gradient(45deg, #496bfe 0%, #496bfe 45%, #5474fd 45%, #5474fd 100%);
+  padding-left: 65px;
+  padding-right: 65px;
 }
 /*# sourceMappingURL=style.css.map */
