@@ -1,0 +1,188 @@
+// this import doesn't work for some reason
+@import "fonts";
+
+$text-color_primery: #ffffff;
+$text-color_secondary: #e8e8e8;
+$text-color_input: #999999;
+$bg-color: #5474fd;
+$bg-color_input: #ffffff;
+
+@mixin reset-link {
+  text-decoration: none;
+  color: $text-color_primery;
+  text-transform: uppercase;
+}
+
+@mixin background-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin btn{
+    border: none;
+    color: $text-color_primery;
+    background-color: $bg-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    height: 60px;
+    background: linear-gradient(
+        45deg,
+        #496bfe 0%,
+        #496bfe 45%,
+        #5474fd 45%,
+        #5474fd 100%
+    );
+}
+
+// overriding Bootstrap
+p {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+// HEADER
+.header {
+  @include background-img();
+  padding-top: 260px;
+  padding-bottom: 136px;
+  color: $text-color_primery;
+  font-family: "Aleo";
+  
+  &__title {
+    background-image: url("../img/nature-mountains.png");
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    font-size: 22px;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+    margin-bottom: 54px;
+  }
+}
+
+.search-form {
+  font-size: 0;
+  padding-bottom: 120px;
+
+  &__input {
+    width: 77%;
+    height: 60px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-size: 14px;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+  }
+
+  &__button {
+    width: 23%;
+    box-sizing: border-box;
+    height: 60px;
+    border: 2px solid $bg-color_input;
+    background-color: $bg-color;
+    font-size: 14px;
+    color: $bg-color_input;
+    text-transform: uppercase;
+    // vertical-align: middle;
+  }
+}
+
+.scroll-down {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  @include reset-link();
+
+  &:hover {
+    color: $text-color_secondary;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 17px;
+    height: 17px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+}
+
+// MENU SECTION
+.logo {
+  display: inline-block;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  vertical-align: middle;
+  @include reset-link();
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.menu {
+  color: $text-color_primery;
+  background-color: $bg-color;
+
+  &__list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  &__list-item {
+  }
+
+  &__list-link {
+    @include reset-link();
+  }
+}
+
+// WHY CHOOSE US SECTION
+.why-us {
+  color: $text-color_primery;
+  background-image: url("../img/castle.png");
+  @include background-img();
+  padding-bottom: 132px;
+}
+
+.info-card {
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 205px;
+    margin-bottom: 56px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $text-color_secondary;
+    letter-spacing: 1.6px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    margin-top: 48px;
+    width: 224px;
+    @include btn();
+  }
+}

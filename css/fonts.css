@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Aleo";
+  src: url("../font/aleo/Light/aleo-light-webfont.eot"), url("../font/aleo/Light/aleo-light-webfont.svg"), url("../font/aleo/Light/aleo-light-webfont.ttf"), url("../font/aleo/Light/aleo-light-webfont.woff"), url("../font/aleo/Light/aleo-light-webfont.woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.eot"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.svg"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.ttf"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.woff"), url("../font/aleo/Light-Italic/aleo-lightitalic-webfont.woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("../font/aleo/Regular/aleo-regular-webfont.eot"), url("../font/aleo/Regular/aleo-regular-webfont.svg"), url("../font/aleo/Regular/aleo-regular-webfont.ttf"), url("../font/aleo/Regular/aleo-regular-webfont.woff"), url("../font/aleo/Regular/aleo-regular-webfont.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("../font/aleo/Regular-Italic/aleo-italic-webfont.eot"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.svg"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.ttf"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.woff"), url("../font/aleo/Regular-Italic/aleo-italic-webfont.woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("../font/aleo/Bold/aleo-bold-webfont.eot"), url("../font/aleo/Bold/aleo-bold-webfont.svg"), url("../font/aleo/Bold/aleo-bold-webfont.ttf"), url("../font/aleo/Bold/aleo-bold-webfont.woff"), url("../font/aleo/Bold/aleo-bold-webfont.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.eot"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.svg"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.ttf"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.woff"), url("../font/aleo/Bold-Italic/aleo-bolditalic-webfont.woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+/*# sourceMappingURL=fonts.css.map */
